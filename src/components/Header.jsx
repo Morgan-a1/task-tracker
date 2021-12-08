@@ -12,10 +12,10 @@ function Header({ title }) {
 
 Header.defaultProps = {
    title: "Task Tracker",
-}
+};
 
 Header.propTypes = {
    title: PropTypes.string,
-}
+};
 
 export default Header;
