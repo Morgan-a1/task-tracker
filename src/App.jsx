@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 const initialTasks = [
   {
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <Tasks tasks={initialTasks} />
     </div>
   );
 }
