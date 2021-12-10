@@ -109,3 +109,9 @@ code {
   height: 20px;
   flex: 2;
 }
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 24px;
+}
