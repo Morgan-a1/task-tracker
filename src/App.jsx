@@ -27,6 +27,7 @@ const initialTasks = [
 
 function App() {
   const [tasks, setTasks] = useState(initialTasks);
+  const [showAdd, setShowAdd] = useState(false);
 
   function toggleReminder(id) {
     const newTasks = tasks.map((task) => (
@@ -52,8 +53,8 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
-      <AddTask onSubmit={addTask} />
+      <Header onAdd={() => setShowAdd(!showAdd)} showAdd={showAdd} />
+      {showAdd && <AddTask onSubmit={addTask} />}
       <Tasks onToggle={toggleReminder} onDelete={deleteTask} tasks={tasks} /> 
     </div>
   );
