@@ -18,7 +18,7 @@ Button.defaultProps = {
    color: "steelblue",
    type: "button",
    block: false,
-}
+};
 
 Button.propTypes = {
    children: PropTypes.node,
