@@ -10,9 +10,10 @@ function Task({ task, onToggle, onDelete, onEdit }) {
             {task.text}
             <span>
                <FaEdit onClick={() => onEdit(task.id)} style={{ marginRight: 4 }} />
-            <FaTimes
-               onClick={() => onDelete(task.id)}
-               style={{ color: "red", cursor: "pointer" }} />
+               <FaTimes
+                  onClick={() => onDelete(task.id)}
+                  style={{ color: "red", cursor: "pointer" }}
+               />
             </span>
          </h3>
          <p>{task.day}</p>

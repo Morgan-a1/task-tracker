@@ -6,7 +6,11 @@ function Tasks({ tasks, onToggle, onDelete, onEdit }) {
       return <p>No tasks to display</p>;
    }
    
-   return tasks.map((task) => <Task onEdit={onEdit} onToggle={onToggle} onDelete={onDelete} key={task.id} task={task} />);
+   return tasks.map((task) => <Task
+      onEdit={onEdit}
+      onToggle={onToggle}
+      onDelete={onDelete}
+      key={task.id} task={task} />);
 }
 
 Tasks.defaultProps = {

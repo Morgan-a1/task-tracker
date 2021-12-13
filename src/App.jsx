@@ -111,10 +111,10 @@ function App() {
     <div className="container">
       <Header onAdd={toggleAdd} showAdd={showAdd} />
       {showAdd && <AddTask onSubmit={addTask} />}
-      {showEdit && <EditTask
+      {showEdit && (<EditTask
         task={selectedTask}
         onSubmit={editTask}
-        onCancel={() => setShowEdit(false)} />}
+        onCancel={() => setShowEdit(false)} />)}
       <Tasks
         onEdit={setEditTask}
         onToggle={toggleReminder}
